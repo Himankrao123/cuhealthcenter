@@ -1,0 +1,24 @@
+body{
+    background-color: antiquewhite;
+}
+.doctable{
+    background-color: antiquewhite;
+    text-align: center;
+    width: 100%;
+    left: auto;
+    right: auto;
+    /* border: 2px inset grey; */
+    font-size: large;
+    padding: 10px;
+}
+.headcol{
+    border-radius: 5px;
+    /* border: 1px solid black; */
+    background-color: red;
+}
+.normrow{
+    background-color: white;
+}
+.normcol{
+    padding: 10px;
+}

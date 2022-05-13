@@ -1,0 +1,13 @@
+{% extends page %}
+{% block css %}/static/css/doctors.css{% endblock css %}
+{% block title %}{{ name }}{% endblock title %}
+{% block body %}
+    <div class="docinfodiv">
+        <b>Name =</b> {{name}}<br><br>
+        <b>Specialization = </b>{{special}}<br><br>
+        <b>Experience =</b> {{exp}}<br><br>
+        <b>About = </b>{{desc}}<br><br>
+        <b>Timing = </b>{{st}} - {{et}}<br><br>
+        <b>Lunch Time =</b> 12:00-13:00<br><br>
+    </div>
+{% endblock body %}

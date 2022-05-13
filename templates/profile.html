@@ -1,0 +1,16 @@
+{% extends 'base2.html' %}
+{% block title %}Profile{% endblock title %}
+{% block css %}/static/css/profile.css{% endblock css %}
+{% block body %}
+    <div class="userinfodiv">
+        Username - {{ username }}<br><br>
+        First name - {{ fname }}<br><br>
+        Last name - {{ lname }}<br><br>
+        E-mail - {{ email }}<br><br>
+        Contact number - {{ contactnumber }}<br><br>
+        Date of Birth - {{ DOB }}<br><br>
+        Age - {{ age }}<br><br>
+        Gender - {{ gender }}<br><br>
+        <a class="profileeditlink" href="/profile/edit"><button class="profileeditbut">Edit</button></a>
+    </div>
+{% endblock body %}

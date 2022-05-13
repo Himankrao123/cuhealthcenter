@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block css %}{% endblock css %}
+{% block title %}{{ status }}{% endblock title %}
+{% block body %}
+    <div style="background-image:url('/media/stetho.jpeg');text-align: center;font-size: x-large;color:black;background-color:red;">
+        <br><br>
+        {{ message }}
+        <br><br><br>
+        <a href="{{nextsteplink}}" style="text-decoration: none;color:white;">{{nextstep}}</a><br><br>
+    </div>
+{% endblock body %}
