@@ -2,9 +2,9 @@
 from django.urls import path
 # from django.urls.conf import include
 from hms import views
-from django.conf import settings
 from django.conf.urls.static import static
-urlpatterns = [
+from django.conf import settings
+urlpatterns = [    
     path("", views.index, name="index"),
     path("service", views.service, name="service"),
     path("contact_us", views.contactus, name="contactus"),
@@ -16,6 +16,4 @@ urlpatterns = [
     path("update/<slug:slug>", views.update, name="update"),
     path("doctor/<slug:slug>",views.docinfo,name="docinfo"),
     path("profile/edit",views.profileedit,name="profileedit"),
-]
-if settings.DEBUG:
-    urlpatterns+=static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
+] +static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)

@@ -1,0 +1,15 @@
+.updiv{
+    background-image: linear-gradient(white,white,red);
+    text-align: center;
+    padding: 10px;
+}
+.messdiv{
+    background-color: brown;
+    border: 2px solid black;
+    color: white;
+    font-size: larger;
+    max-width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+}

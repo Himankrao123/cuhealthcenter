@@ -1,0 +1,60 @@
+.formlink {
+    text-decoration: none;
+    color: blue;
+}
+
+.formlink:hover {
+    text-decoration: none;
+    color: red;
+}
+
+.password {
+    width: 70%;
+    height: 40px;
+    border: 0.5px solid black;
+    border-radius: 1px;
+}
+
+.usrname {
+    width: 70%;
+    height: 40px;
+    border: 0.5px solid black;
+    border-radius: 2px;
+}
+
+.submitbutton {
+    width: 70%;
+    border-width: 0px;
+    border-radius: 3px;
+    height: 25px;
+    background-color: rgb(62, 161, 253);
+}
+.inputpara{
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 65%;
+    text-align: center;
+}
+.loginshown{
+    background-image: url("/media/stetho.jpeg");
+    background-position: top;
+    background-repeat: no-repeat;
+    padding: 50px;
+    width: 100%;
+    height: 100%;
+}
+
+
+@media (max-width:760px) {
+    .usrname{
+        width: 100%;
+    }
+    .password{
+        width: 100%;
+    }
+    .loginshown{
+        background-position:initial;
+    }
+}
