@@ -1,0 +1,12 @@
+.docinfodiv{
+    background-image: url("/media/stetho.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    padding: 10px;
+}
+@media (max-width:750px){
+    .docinfodiv{
+        background-position: unset;
+    }
+}

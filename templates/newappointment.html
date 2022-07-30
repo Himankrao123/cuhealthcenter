@@ -1,0 +1,23 @@
+{% extends page %}
+{% block title %}New appointment{% endblock title %}
+{% block css %}/static/css/newappointment.css{% endblock css %}
+{% block body %} 
+<div class="loginshown">
+    <br><br>
+    <form action="/newappointment" id="form" class="form" method="POST">
+        {% csrf_token %}
+        <div class="inputpara">
+            <!-- <input type="text" class="ofwhom" value="Mine" readonly><br> -->
+            <select name="withwho" id="withwho" class="withwho" required>
+                <option>--select doctor</option>
+                {% for i in options %}
+                <option>{{ i }}</option>
+                {% endfor %}
+            </select><br><br>
+            <textarea class="appdesc" name="appdesc" required placeholder="Please define the reason for appointment...."></textarea><br><br><br>
+            <input type="submit" class="appsubbut">
+        </div>
+        <br><br><br>
+    </form>
+</div>
+{% endblock body %}

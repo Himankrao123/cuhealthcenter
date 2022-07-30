@@ -1,0 +1,85 @@
+Q:-1
+
+#include<stdio.h>
+// Code by Abinash(21BCS3298)
+void main()
+{
+
+    int i, sum=0;
+    printf("All nos. between 100 - 200 which is divisible by 7\n");
+    for(i=101;i<200;i++)
+    {
+        if(i%7==0)
+        {
+            printf("%5d",i);
+            sum+=i;
+        }
+    }
+    printf("\n\nsum = %d",sum);
+}
+
+
+
+
+Q:-2
+
+
+#include<stdio.h>
+// Code by Abinash(21BCS3298)
+void main()
+{
+    float x,sum,no_row;
+    int i,n;
+    printf("Input the value of x :");
+    scanf("%f",&x);
+    printf("Input number of terms : ");
+    scanf("%d",&n);
+    sum =1;
+    no_row = 1;
+    for (i=1;i<n;i++)
+    {
+    no_row = no_row*x/(float)i;
+    sum =sum+ no_row;
+    }
+    printf("\nThe sum is : %f\n",sum);
+
+}
+
+
+
+
+Q:-3
+
+
+
+#include <stdio.h>
+// Code by Abinash(21BCS3298)
+int main()
+{
+   int i, j, cur, lastDigit, m, n;
+   long fact, sum;
+   printf("Enter lower and upper limit: ");
+   scanf("%d%d", &m,&n);
+   printf("Armstrong numbers between %d to %d are:\n", m,n);
+   for(i=m; i<=n; i++)
+   {
+        cur = i;
+        sum = 0;
+        while(cur > 0)
+        {
+           fact = 1;
+           lastDigit = cur % 10;
+            for( j=1; j<=3; j++)
+            {
+                fact = fact * lastDigit;
+            }
+            sum += fact;
+            cur /= 10;
+        }
+        if(sum == i)
+        {
+            printf("%d, ", i);
+        }
+   }
+   return 0;
+}

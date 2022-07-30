@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block css %}/static/css/signin.css{% endblock css %}
+{% block title %}Signin{% endblock title %}
+{% block body %}
+<div class="loginshown">
+    <br>
+    <br>
+    <form action="/accounts/signin" id="form" class="form" method="POST">
+        {% csrf_token %}
+        <div class="inputpara">
+            <input type="text" required id="username" name="username" class="usrname"
+                placeholder=" Username"><br><br>
+            <input type="password" required id="password" name="password" class="password" placeholder=" Password"><br><br>
+                <input type="submit" value="Log in" class="submitbutton">
+                <br><br>
+            <a class="formlink" href="/accounts/signup">Create new account!</a><br><br>
+        </div>
+        <br><br><br>
+    </form>
+</div>
+{% endblock body %}

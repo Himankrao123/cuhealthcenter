@@ -1,0 +1,11 @@
+.userinfodiv{
+    text-align: center;
+    background-image: linear-gradient(white,white,red);
+    padding: 10px;
+}
+.profileeditbut{
+    background-color: royalblue;
+    padding: 8px;
+    color:white;
+    border: none;
+}

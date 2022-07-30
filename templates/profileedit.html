@@ -1,0 +1,21 @@
+{% extends 'base2.html' %}
+{% block title %}Profile{% endblock title %}
+{% block css %}/static/css/profile.css{% endblock css %}
+{% block body %}
+<div class="userinfodiv">
+    <form action="#" method="post">
+    {% csrf_token %}
+    First name - <input type="text" name="fname" value="{{ fname }}" class="inputop"><br><br>
+    Last name - <input type="text" name="lname" value="{{ lname }}" class="inputop"><br><br>
+    E-mail - <input type="email" name="email" value="{{ email }}" class="inputop"><br><br>
+    Contact number - <input type="tel" name="contactnumber" value="{{ contactnumber }}" class="inputop"><br><br>
+    Date of Birth - <input type="date" name="dob" value="{{ DOB }}" class="inputop"><br><br>
+    Age - <input type="number" name="age" value="{{ age }}" class="inputop"><br><br>
+    Gender - <input type="radio" name="gender" checked value="Male" class="inputop"> Male
+    <input type="radio" name="gender" value="Female" class="inputop"> Female
+    <input type="radio" name="gender" value="Other" class="inputop"> Other
+    <br><br>
+    <button type="submit" class="profileeditbut">Submit</button>
+    </form>
+</div>
+{% endblock body %}

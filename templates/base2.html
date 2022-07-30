@@ -1,0 +1,50 @@
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="R.B.R. Sr. Sec. School, Basduda : A better place for your children to study sincierly, deeply, logically and precisely.">
+    <title>{% block title %}{% endblock title %} | CU Health Care</title> 
+    <link rel="shortcut icon" type="favicon/png" href="/static/media/photos/logo.png">
+    <link rel="stylesheet" type="text/css" href="/static/css/base.css">
+    <link rel="stylesheet" type="text/css" href="{% block css %}{% endblock css %}">
+
+    <style>
+
+    </style>
+    <script src="/static/javascript/base.js"></script>
+    <noscript>Sorry javascript is required for some functions......</noscript>
+</head>
+
+<body class="bodyofbase">
+    <div class="headdiv">
+        <div id="mySidebar" class="sidebar">
+            <a class="sidebarlinks" href="javascript:void(0)" id="closebtn" onclick="closeNav()">&times;</a>
+            <a class="sidebarlinks" href="/profile">My account</a>
+            <a class="sidebarlinks" href="/logout">Logout</a>
+            <a class="sidebarlinks" href="/documents">My documents</a>
+            <a class="sidebarlinks" href="/service">Services</a>
+            <a class="sidebarlinks" href="/contact_us">Contact Us</a>
+            <br><br><br>
+            <p class="followbut">Follow us:</p>
+            <hr>
+            <br>
+            <br>
+            <hr>
+            <p>
+            <a  class="otherlinks" href="/about">About</a> | 
+            <a class="otherlinks" href="/contact_us">Contact</a> | 
+            <a class="otherlinks" href="/terms_and_conditions">Terms and conditions</a> | 
+            <a class="otherlinks" href="/privacy_policy">Privacy policy</a></p><br><br><br>
+        </div>
+    </div>
+                <p class="toppara" id="toppara"><button class="openbtn" id="openbtn" onclick="openNav()">&#9776;</button>
+                     <a class="homelink" href="/"><font src="/static/photos/favicon2.png" style="font-size: xx-large;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;color: red; margin-top:2px;text-decoration: none;">CU<font style="color: black;"> Health Centre</font></font></a><br>
+                        
+                </p>
+    
+    {% block body %}{% endblock body %}
+    <script src="{% block js %}{% endblock js %}"></script>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+{% extends 'base2.html' %}
+{% block title %}Documetns{% endblock title %}
+{% block css %}/static/css/documents.css{% endblock css %}
+{% block body %}
+    <table class="doctable">
+        <tr class="headrow">
+            <th class="headcol">
+                File name
+            </th >
+            <th class="headcol">
+                File Description
+            </th>
+            <th class="headcol">
+                Download file
+            </th>
+        </tr>
+    {% for item in objects %}
+    {% autoescape off %}
+        <tr class="normrow">
+    {{ item }}
+        </tr>
+    {% endautoescape %}
+    {% endfor %}
+</table>
+    
+{% endblock body %}

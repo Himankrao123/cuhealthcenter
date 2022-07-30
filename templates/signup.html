@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% block title %}Signup{% endblock title %}
+{% block css %}/static/css/signup.css{% endblock css %}
+{% block body %}
+<div class="loginshown">
+    {% comment %} <img class="mainimg" src="/media/stetho.jpeg"><br> {% endcomment %}
+    <form action="/accounts/signup" id="form" name="form" onsubmit="return validateForm()" class="form" method="POST">
+        {% csrf_token %}
+        <div class="inputpara">
+            <input type="text" required id="username" name="username" class="usrname"
+                placeholder=" Enter your username">
+            <input type="number" required id="age" name="age" class="age" placeholder=" Enter your age"><br><br>
+            <input type="password" required id="password" name="password" class="password"
+                placeholder=" Enter password">
+            <input type="password" required id="password2" name="password2" class="password"
+                placeholder=" Enter password again"><br><br>
+            <input type="email" required id="email" name="email" class="email" placeholder=" Enter your email">
+            <input type="tel" required id="phone" name="phone" class="phone" placeholder=" Enter your mobile number"><br><br>
+            <input type="text" required id="name" name="fname" class="name" placeholder=" Enter your first name">
+            <input type="text" required id="name" name="lname" class="name" placeholder=" Enter your last name">
+            
+            <table class="signuptable">
+                <td class="signupcol">Gender : 
+                    <input type="radio" required id="gender" name="gender" class="gender" value="Male">Male 
+                    <input type="radio" required id="gender" name="gender" class="gender" value="Female">Female
+                    <input type="radio" required id="gender" name="gender" class="gender" value="Other">Other
+                </td>
+                <td class="signupcol">
+                    Enter date of birth<br><input type="date" required id="dob" name="dob" class="dob"
+                        placeholder=" Enter your date of birth"></td>
+            </table><br>
+            <input type="submit" value="Create account" class="submitbutton"><br><br>
+            Already have an account!
+            <a class="formlink" href="/accounts/signin">Log in</a><br><br>
+            <br><br>
+        </div>
+
+        <br><br><br>
+    </form>
+</div>
+{% endblock body %}
+
+{% block javascript %}/static/javascript/signup.js{% endblock javascript %}

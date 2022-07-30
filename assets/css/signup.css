@@ -1,0 +1,81 @@
+.formlink {
+    text-decoration: none;
+    color: blue;
+}
+
+.formlink:hover {
+    text-decoration: none;
+    color: red;
+}
+
+.name,.age,.password,.email,.phone,.usrname{
+    width: 35%;
+    height: 40px;
+    border: 0.5px solid black;
+    border-radius: 1px;
+}
+.dob{
+    width: 100%;
+    height: 40px;
+    border: 0.5px solid black;
+    border-radius: 1px;
+    margin: 0%;
+}
+.signuptable{
+    padding: 0%;
+    width: 70%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+.signupcol{
+    text-align: center;
+    padding: 0%;
+    width: 50%;
+}
+
+.submitbutton {
+    width: 70%;
+    border-width: 0px;
+    border-radius: 3px;
+    height: 25px;
+    background-color: rgb(62, 161, 253);
+}
+.inputpara{
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 65%;
+    text-align: center;
+}
+.loginshown{
+    background-image: url("/media/stetho.jpeg");
+    background-position: top;
+    background-repeat: no-repeat;
+    padding: 50px;
+    width: 100%;
+    height: 100%;
+}
+/* .mainimg{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 50px;
+    margin-bottom: 5px;
+} */
+
+
+@media (max-width:760px) {
+    .signuptable{
+        width: 100%;
+    }
+    .usrname,.name,.name,.age,.password,.email,.phone{
+        width: 48%;
+    }
+    .loginshown{
+        background-position:initial;
+    }
+}
